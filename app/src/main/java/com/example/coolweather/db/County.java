@@ -1,11 +1,18 @@
 package com.example.coolweather.db;
 
+import com.google.gson.annotations.SerializedName;
+
 import org.litepal.crud.LitePalSupport;
 
 public class County extends LitePalSupport {
     private int id;
+
     private String countyName;
+
     private String weatherId;
+
+    private int countyId;
+
     private int cityId;
 
     public int getId() {
@@ -30,6 +37,14 @@ public class County extends LitePalSupport {
 
     public void setWeatherId(String weatherId) {
         this.weatherId = weatherId;
+    }
+
+    public int getCountyId() {
+        return countyId;
+    }
+
+    public void setCountyId(int countyId) {
+        this.countyId = countyId;
     }
 
     public int getCityId() {
