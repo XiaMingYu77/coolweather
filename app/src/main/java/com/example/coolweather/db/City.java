@@ -7,6 +7,7 @@ import org.litepal.crud.LitePalSupport;
 public class City extends LitePalSupport {
     private int id;
 
+    @SerializedName("name")
     private String cityName;
 
     private int cityCode;
