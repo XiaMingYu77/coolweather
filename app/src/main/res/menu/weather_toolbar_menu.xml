@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_open"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="Open menu"
+        app:iconTint="#fff"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/re_choose_county"
+                android:icon="@drawable/ic_baseline_add_location_24"
+                android:title="管理城市"
+                app:iconTint="@color/gray"
+                app:showAsAction="never" />
+
+            <!--     这里暂时只放置了一个功能       -->
+        </menu>
+    </item>
+
+</menu>
